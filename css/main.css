@@ -13,7 +13,7 @@
 .image-container::before {
   content: '';
   display: block;
-  background: url('/images/pattern.jpg');
+  background: url('../images/pattern.jpg');
   background-repeat: repeat;
   width: 200%;
   height: 100%;

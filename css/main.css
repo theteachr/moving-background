@@ -1,33 +1,33 @@
 .image-container {
-  width: 256px;
-  height: 256px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: pink;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 256px;
+	height: 256px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: pink;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .image-container::before {
-  content: '';
-  display: block;
-  background: url('../images/pattern.jpg');
-  background-repeat: repeat;
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  animation: keep-sliding 4s ease-in-out alternate infinite;
-  left: 0;
+	content: '';
+	display: block;
+	background: url('../images/pattern.jpg');
+	background-repeat: repeat;
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	animation: keep-sliding 4s ease-in-out alternate infinite;
+	left: 0;
 }
 
 img {
-  transform: translate(0, 0);
+	transform: translate(0, 0);
 }
 
 @keyframes keep-sliding {
-  to {
-    transform: translateX(-50%);
-  }
+	to {
+		transform: translateX(-50%);
+	}
 }
